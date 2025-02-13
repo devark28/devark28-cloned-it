@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "vite:build": "vite build"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",

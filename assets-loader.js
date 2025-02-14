@@ -6,7 +6,7 @@ async function loadAssets() {
     let data = await fetch(`/assets/${asset}`);
     let text = await data.text();
     console.log(text);
-    const frg = document.createDocumentFragment();
+    const frg = document.createElement();
     frg.append(text);
     container.append(frg);
   }

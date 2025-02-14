@@ -3,7 +3,7 @@ async function loadAssets() {
   console.log(assetContainers);
   for (const container of assetContainers) {
     const asset = container.getAttribute('data-asset');
-    const asset = container.getAttribute('data-asset-class');
+    const asset_class = container.getAttribute('data-asset-class');
     let data = await fetch(`/assets/${asset}`);
     let text = await data.text();
 

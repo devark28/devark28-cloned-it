@@ -11,27 +11,61 @@
     <title>University of Notre Dame</title>
 </head>
 <body class="">
-<div class="border-t-gold-brand border-t-[.4rem] border-b-blue-brand-dark border-b-[.4rem]">
+<div class="border-t-gold-brand border-t-[.4rem] border-b-blue-brand-dark border-b-[.4rem] md:hidden">
      <div class="asset bg-blue-brand flex items-center justify-center h-25 fill-white" data-asset="images/logo.svg" data-asset-class="w-50 *:first:fill-gold-brand"></div>
 </div>
-<header class="p-5 border-b-gray-200 border-b-[.2rem] sticky top-0 bg-white z-10 fill-blue-brand font-stretch-condensed">
-    <div class="flex justify-between">
-        <div class="uppercase flex flex-col items-center justify-center">
-            <span class="asset" data-asset="images/home.svg" data-asset-class="h-5"></span>
-            Home
-        </div>
-        <div class="uppercase flex flex-col items-center justify-center">
-            <span class="asset" data-asset="images/mail.svg" data-asset-class="h-5"></span>
-            Contact
-        </div>
-        <div class="uppercase flex flex-col items-center justify-center">
-            <span class="asset" data-asset="images/search.svg" data-asset-class="h-5"></span>
-            Search
-        </div>
-        <div class="uppercase flex flex-col items-center justify-center">
-            <span class="asset" data-asset="images/menu.svg" data-asset-class="h-5"></span>
-            Menu
-        </div>
+<header class="sticky top-0 bg-white z-10 fill-blue-brand">
+    <div class="border-b-gray-200 border-b-[.2rem] flex justify-between md:hidden p-5 font-stretch-condensed">
+        <nav class="contents">
+            <ul class="contents">
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/home.svg" data-asset-class="h-5"></span>
+                    Home
+                </li>
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/mail.svg" data-asset-class="h-5"></span>
+                    Contact
+                </li>
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/search.svg" data-asset-class="h-5"></span>
+                    Search
+                </li>
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/menu.svg" data-asset-class="h-5"></span>
+                    Menu
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hidden md:flex border-b-blue-brand-dark border-b-[.4rem] bg-blue-brand **:[li]:p-5 px-15 gap-5 fill-white text-white items-center justify-end">
+        <nav class="contents">
+            <ul class="contents">
+                <li class="bg-blue-brand-light">
+                    <a href="#" class=""><span class="asset" data-asset="images/home.svg" data-asset-class="w-5"></span></a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Academics</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Admissions</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Research</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Global</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Faith & Service</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Campus</a>
+                </li>
+                <li class="">
+                    <a href="#" class=""><span class="asset" data-asset="images/search.svg" data-asset-class="w-4"></span></a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
 <main class="">

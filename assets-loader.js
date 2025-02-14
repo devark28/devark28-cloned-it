@@ -9,6 +9,7 @@ async function loadAssets() {
 
     const frg = document.createElement('div');
     frg.innerHTML = text;
+    frg.querySelector('svg').setAttribute('class')
 
     container.append(frg.querySelector('svg'));
   }

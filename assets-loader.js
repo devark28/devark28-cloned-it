@@ -3,7 +3,6 @@ function loadAssets() {
   console.log(assetContainers);
   assetContainers.forEach(async (container) => {
     const asset = container.getAttribute('data-asset');
-    let data = await fetch(`/assets/${asset}`);
   })
 }
 

@@ -11,72 +11,111 @@
     <title>University of Notre Dame</title>
 </head>
 <body class="">
-<div class="border-t-gold-brand border-t-[.4rem] border-b-blue-brand-dark border-b-[.4rem]">
+<div class="border-t-gold-brand border-t-[.4rem] border-b-blue-brand-dark border-b-[.4rem] md:hidden">
      <div class="asset bg-blue-brand flex items-center justify-center h-25 fill-white" data-asset="images/logo.svg" data-asset-class="w-50 *:first:fill-gold-brand"></div>
 </div>
-<header class="p-5 border-b-gray-200 border-b-[.2rem]">
-    <div class="flex justify-between">
-        <div class="uppercase flex flex-col items-center justify-center">
-            <div class="asset" data-asset="images/home.svg" data-asset-class="h-5"></div>
-            Home
-        </div>
-        <div class="uppercase flex flex-col items-center justify-center">
-            <div class="asset" data-asset="images/mail.svg" data-asset-class="h-5"></div>
-            Contact
-        </div>
-        <div class="uppercase flex flex-col items-center justify-center">
-            <div class="asset" data-asset="images/search.svg" data-asset-class="h-5"></div>
-            Search
-        </div>
-        <div class="uppercase flex flex-col items-center justify-center">
-            <div class="asset" data-asset="images/menu.svg" data-asset-class="h-5"></div>
-            Menu
-        </div>
+<header class="sticky top-0 bg-white z-10 fill-blue-brand">
+    <div class="border-b-gray-200 border-b-[.2rem] flex justify-between md:hidden p-5 font-stretch-condensed">
+        <nav class="contents">
+            <ul class="contents">
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/home.svg" data-asset-class="h-5"></span>
+                    Home
+                </li>
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/mail.svg" data-asset-class="h-5"></span>
+                    Contact
+                </li>
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/search.svg" data-asset-class="h-5"></span>
+                    Search
+                </li>
+                <li class="uppercase flex flex-col items-center justify-center">
+                    <span class="asset" data-asset="images/menu.svg" data-asset-class="h-5"></span>
+                    Menu
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hidden md:flex border-b-blue-brand-dark border-b-[.4rem] bg-blue-brand **:[li]:p-5 px-15 gap-5 fill-white text-white items-center justify-end">
+        <nav class="contents">
+            <ul class="contents">
+                <li class="bg-blue-brand-light">
+                    <a href="#" class=""><span class="asset" data-asset="images/home.svg" data-asset-class="w-5"></span></a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Academics</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Admissions</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Research</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Global</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Faith & Service</a>
+                </li>
+                <li class="">
+                    <a href="#" class="">Campus</a>
+                </li>
+                <li class="">
+                    <a href="#" class=""><span class="asset" data-asset="images/search.svg" data-asset-class="w-4"></span></a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
 <main class="">
-    <section class="bg-blue-brand py-10 px-15">
-        <div class="flex flex-col gap-10">
-            <img src="assets/images/nd_hero_text.svg" alt="" class="h-52 object-contain object-center">
-            <p class="text-white text-center">Notre Dame attracts people willing to take action to find solutions to humanity's most pressing challenges. "What would you fight for?" For us, it's not a question. It's a call to action. We are the Fighting Irish.</p>
-            <button class="rounded-lg bg-white text-blue-brand py-4 px-6 w-fit">What would you fight for?</button>
+    <section class="bg-[radial-gradient(circle,_rgba(20,56,101,1)_0%,_rgba(12,35,64,1)_70%,_rgba(8,22,41,1)_100%)] relative">
+        <img src="assets/images/campus_model.png" alt="" class="h-full w-full object-cover object-center absolute opacity-40">
+        <div class="py-10 px-15 relative">
+            <div class="flex flex-col gap-10 items-center md:items-end">
+                <img src="assets/images/nd_hero_text.svg" alt="" class="h-52 object-contain object-center md:h-auto md:w-70">
+                <p class="text-white text-center md:text-2xl md:max-w-2/5">Notre Dame attracts people willing to take action to find solutions to humanity's most pressing challenges. "What would you fight for?" For us, it's not a question. It's a call to action. We are the Fighting Irish.</p>
+                <button class="rounded-lg bg-white text-blue-brand w-fit py-4 px-6 md:py-3 md:px-5 md:text-lg">What would you fight for?</button>
+            </div>
         </div>
     </section>
-    <section class="p-5">
-        <div class="grid grid-cols-1 gap-6">
-            <img src="assets/images/school_models.png" alt="" class="">
-            <div class="flex flex-col space-y-20">
-                <div class="flex flex-col px-6">
-                    <p class="uppercase text-sm text-gray-600">University</p>
-                    <div class="flex">
-                        <p class="flex-1 text-2xl text-blue-brand pr-10">University of Notre Dame wins award for excellence in campus internationalization</p>
-                        <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+    <section class="p-5 md:px-0">
+        <div class="grid grid-cols-1 gap-6 items-center justify-items-center md:grid-cols-[2fr_3fr] md:grid-rows-2 md:pr-20">
+            <div class="flex flex-col space-y-20 md:space-y-0 md:contents">
+                <div class="flex flex-col gap-6 row-span-2">
+                    <img src="assets/images/school_models.png" alt="" class="">
+                    <div class="flex flex-col px-6">
+                        <p class="uppercase text-sm text-gray-600">University</p>
+                        <div class="flex">
+                            <p class="flex-1 text-2xl text-blue-brand pr-10 md:text-3xl">University of Notre Dame wins award for excellence in campus internationalization</p>
+                            <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="flex flex-col px-6">
                     <p class="uppercase text-sm text-gray-600">Colleges and Schools</p>
                     <div class="flex">
-                        <p class="flex-1 text-2xl text-blue-brand pr-10">Physicist Laura Fields granted a Presidential Early Career Award</p>
-                        <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                        <p class="flex-1 text-2xl text-blue-brand pr-10 md:text-3xl">Physicist Laura Fields granted a Presidential Early Career Award</p>
+                        <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                     </div>
                 </div>
                 <div class="flex flex-col px-6">
                     <p class="uppercase text-sm text-gray-600">Global</p>
                     <div class="flex">
-                        <p class="flex-1 text-2xl text-blue-brand pr-10">University of Notre Dame and Pontificia Universidad Católica de Chile dual PhD program welcomes all disciplines</p>
-                        <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                        <p class="flex-1 text-2xl text-blue-brand pr-10 md:text-3xl">University of Notre Dame and Pontificia Universidad Católica de Chile dual PhD program welcomes all disciplines</p>
+                        <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-blue-brand">
-        <div class="grid grid-cols-1">
-            <div class="flex flex-col">
-                <img src="assets/images/school_models_2.png" alt="" class="outline-white -outline-offset-8 outline">
-                <div class="flex flex-col px-5 py-10">
-                    <p class="uppercase text-sm text-gray-300">Research</p>
-                    <p class="uppercase text-2xl text-white font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0">The Opportunity of Inquiry</p>
+    <section class="bg-blue-brand md:mt-40">
+        <div class="grid grid-cols-1 md:gap-y-30">
+            <div class="flex flex-col md:grid md:grid-cols-2 justify-items-center items-center md:gap-x-10">
+                <img src="assets/images/school_models_2.png" alt="" class="outline-white -outline-offset-8 outline relative md:scale-180 md:-outline-offset-4">
+                <div class="flex flex-col px-5 py-10 md:px-10">
+                    <p class="uppercase text-sm text-gray-300 md:text-lg">Research</p>
+                    <p class="text-2xl text-white font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0 md:text-5xl md:font-bold md:before:w-20 md:before:h-1.5 md:before:-left-5">The Opportunity of Inquiry</p>
                     <p class="flex-1 text-white pr-10 mt-10">For scholars who share a common passion for inquiry because of what it can reveal about our world and ourselves, there is opportunity here.</p>
                     <button class="flex text-white text-lg gap-2 w-fit px-5 py-3 rounded-lg mt-5 self-end focus:outline-4 focus:outline-blue-500">
                         Research at ND
@@ -84,11 +123,11 @@
                     </button>
                 </div>
             </div>
-            <div class="flex flex-col">
-                <img src="assets/images/school_models_3.png" alt="" class="outline-white -outline-offset-8 outline">
-                <div class="flex flex-col px-5 py-10">
-                    <p class="uppercase text-sm text-gray-300">Faith & Service</p>
-                    <p class="uppercase text-2xl text-white font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0">The Demands of Justice</p>
+            <div class="flex flex-col md:grid md:grid-cols-2 justify-items-center items-center md:gap-x-10">
+                <img src="assets/images/school_models_3.png" alt="" class="outline-white -outline-offset-8 outline relative md:scale-180 md:-outline-offset-4 md:order-1">
+                <div class="flex flex-col px-5 py-10 md:px-10">
+                    <p class="uppercase text-sm text-gray-300 md:text-lg">Faith & Service</p>
+                    <p class="text-2xl text-white font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0 md:text-5xl md:font-bold md:before:w-20 md:before:h-1.5 md:before:-left-5">The Demands of Justice</p>
                     <p class="flex-1 text-white pr-10 mt-10">Notre Dame is animated by a faith that inspires us to seek knowledge because of the powerful tool it can be to improve humankind.</p>
                     <button class="flex text-white text-lg gap-2 w-fit px-5 py-3 rounded-lg mt-5 self-end focus:outline-4 focus:outline-blue-500">
                         Faith & Service at ND
@@ -96,11 +135,11 @@
                     </button>
                 </div>
             </div>
-            <div class="flex flex-col">
-                <img src="assets/images/school_models_4.png" alt="" class="outline-white -outline-offset-8 outline">
-                <div class="flex flex-col px-5 py-10">
-                    <p class="uppercase text-sm text-gray-300">Global</p>
-                    <p class="uppercase text-2xl text-white font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0">The Connected World</p>
+            <div class="flex flex-col md:grid md:grid-cols-2 justify-items-center items-center md:gap-x-10">
+                <img src="assets/images/school_models_4.png" alt="" class="outline-white -outline-offset-8 outline relative md:scale-180 md:-outline-offset-4">
+                <div class="flex flex-col px-5 py-10 md:px-10">
+                    <p class="uppercase text-sm text-gray-300 md:text-lg">Global</p>
+                    <p class="text-2xl text-white font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0 md:text-5xl md:font-bold md:before:w-20 md:before:h-1.5 md:before:-left-5">The Connected World</p>
                     <p class="flex-1 text-white pr-10 mt-10">Notre Dame seeks to be in the world, and to bring the world to Notre Dame, because inquiry and scholarly exchange are enriched by the pursuit of cultural fluency.</p>
                     <button class="flex text-white text-lg gap-2 w-fit px-5 py-3 rounded-lg mt-5 self-end focus:outline-4 focus:outline-blue-500">
                         Global Scholarship at ND
@@ -110,12 +149,12 @@
             </div>
         </div>
     </section>
-    <section class="p-5">
+    <section class="p-5 md:mt-40 md:p-15">
         <div class="flex flex-col gap-5">
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5 md:flex-row md:justify-between">
                 <div class="">
-                    <p class="uppercase text-sm text-gray-300">Global</p>
-                    <p class="uppercase text-2xl text-blue-brand font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0">The Connected World</p>
+                    <p class="uppercase text-sm text-gray-600">University News</p>
+                    <p class="text-2xl text-blue-brand font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0 md:text-5xl md:font-bold md:before:w-20 md:before:h-1.5 md:before:-left-5">Notre Dame At Work</p>
                 </div>
                 <div class="">
                     <button class="flex text-blue-brand items-center gap-2 w-fit px-5 py-3 rounded-lg mt-5 self-end focus:outline-4 focus:outline-blue-500">
@@ -124,101 +163,101 @@
                     </button>
                 </div>
             </div>
-            <div class="grid grid-cols-1">
-                <div class="flex flex-col">
-                    <img src="assets/images/school_models.png" alt="" class="">
-                    <div class="flex flex-col p-6">
+            <div class="grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 md:items-center md:justify-items-center">
+                <div class="flex flex-col md:grid md:grid-cols-5 md:col-span-full md:gap-x-10 md:row-span-2">
+                    <img src="assets/images/school_models.png" alt="" class="md:col-span-3">
+                    <div class="flex flex-col p-6 md:col-span-2">
                         <p class="uppercase text-sm text-gray-600">International</p>
                         <div class="flex mt-3">
-                            <p class="flex-1 text-2xl text-blue-brand pr-10">University of Notre Dame wins award for excellence in campus internationalization</p>
-                            <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                            <p class="flex-1 text-2xl text-blue-brand pr-10 md:text-3xl">University of Notre Dame wins award for excellence in campus internationalization</p>
+                            <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col md:grid grid-cols-1 md:grid-cols-3 md:order-1 md:col-span-3">
                     <img src="assets/images/school_models_5.png" alt="" class="">
-                    <div class="flex flex-col p-6">
+                    <div class="flex flex-col p-6 md:col-span-2">
                         <p class="uppercase text-sm text-gray-600">Latest News</p>
                         <div class="flex mt-3">
-                            <p class="flex-1 text-2xl text-blue-brand pr-10">ND Ethics Week explores business and sustainability</p>
-                            <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                            <p class="flex-1 text-2xl text-blue-brand pr-10 md:text-xl">ND Ethics Week explores business and sustainability</p>
+                            <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col md:col-span-2">
                     <img src="assets/images/school_models.png" alt="" class="hidden">
                     <div class="flex flex-col p-6">
                         <p class="uppercase text-sm text-gray-600">Community News</p>
                         <div class="flex mt-3">
-                            <p class="flex-1 text-2xl text-blue-brand pr-10">Notre Dame partners with community organizations for Walk the Walk Week service project</p>
-                            <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                            <p class="flex-1 text-2xl text-blue-brand pr-10 md:text-xl">Notre Dame partners with community organizations for Walk the Walk Week service project</p>
+                            <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col">
+                <div class="flex flex-col md:order-2 md:col-span-2">
                     <img src="assets/images/school_models.png" alt="" class="hidden">
-                    <div class="flex flex-col p-6">
+                    <div class="flex flex-col p-6 md:py-0">
                         <p class="uppercase text-sm text-gray-600">Faculty and Staff</p>
                         <div class="flex mt-3">
-                            <p class="flex-1 text-2xl text-blue-brand pr-10">Physicist Laura Fields granted a Presidential Early Career Award</p>
-                            <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                            <p class="flex-1 text-2xl text-blue-brand pr-10 md:text-xl">Physicist Laura Fields granted a Presidential Early Career Award</p>
+                            <div class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="p-5 mt-10">
+    <section class="p-5 mt-10 md:mt-0 md:p-15">
         <div class="flex flex-col gap-5">
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5 md:flex-row md:justify-between">
                 <div class="">
                     <p class="uppercase text-sm text-gray-600">University Stories</p>
-                    <p class="uppercase text-2xl text-blue-brand font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0">Notre Dame In Focus</p>
+                    <p class="text-2xl text-blue-brand font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0 md:text-5xl md:font-bold md:before:w-20 md:before:h-1.5 md:before:-left-5">Notre Dame In Focus</p>
                 </div>
                 <div class="">
                     <button class="flex text-blue-brand items-center gap-2 w-fit px-5 py-3 rounded-lg mt-5 self-end focus:outline-4 focus:outline-blue-500">
-                        View all news
+                        View all stories
                         <span class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-1.5 fill-gold-brand"></span>
                     </button>
                 </div>
             </div>
-            <div class="grid grid-cols-1">
+            <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
                 <div class="flex flex-col">
                     <img src="assets/images/school_models_6.png" alt="" class="">
                     <div class="flex flex-col p-6">
-                        <p class="uppercase text-sm text-gray-600">Global</p>
+                        <p class="uppercase text-sm text-gray-600 md:text-base">Global</p>
                         <div class="flex mt-3">
                             <div class="flex flex-col gap-3 pr-10">
                                 <p class="flex-1 text-2xl text-blue-brand">Empowering through education</p>
                                 <p class="">A pathway out of poverty for children in India</p>
                             </div>
-                            <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                            <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <img src="assets/images/school_models_7.png" alt="" class="">
                     <div class="flex flex-col p-6">
-                        <p class="uppercase text-sm text-gray-600">Community</p>
+                        <p class="uppercase text-sm text-gray-600 md:text-base">Community</p>
                         <div class="flex mt-3">
                             <div class="flex flex-col gap-3 pr-10">
                                 <p class="flex-1 text-2xl text-blue-brand">Habitat partnership bears fruit for homebuyers in South Bend</p>
                                 <p class="hidden">A pathway out of poverty for children in India</p>
                             </div>
-                            <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                            <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <img src="assets/images/school_models_8.png" alt="" class="">
                     <div class="flex flex-col p-6">
-                        <p class="uppercase text-sm text-gray-600">University</p>
+                        <p class="uppercase text-sm text-gray-600 md:text-base">University</p>
                         <div class="flex mt-3">
                             <div class="flex flex-col gap-3 pr-10">
                                 <p class="flex-1 text-2xl text-blue-brand">Reasons to serve</p>
                                 <p class="">History, West Point, and 9/11 memorial inspire ND ROTC students in New York</p>
                             </div>
-                            <div class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></div>
+                            <span class="asset flex items-center md:opacity-0" data-asset="images/right_chevron.svg" data-asset-class="w-4 fill-gold-brand"></span>
                         </div>
                     </div>
                 </div>
@@ -226,25 +265,33 @@
         </div>
     </section>
     <section class="mt-10 bg-blue-brand">
-        <div class="flex flex-col">
-            <img src="assets/images/school_models_9.png" alt="" class="">
-            <div class="p-5 flex flex-col gap-5 mt-5">
-                <p class="text-white text-xl">“Notre Dame must be the leading global Catholic research university, on par with but distinct from the world's best private universities. This effort to educate students and conduct research at the highest level animated by a distinctive Catholic mission is one of the most exciting and consequential experiments in global higher education.”</p>
+        <div class="flex flex-col md:grid md:grid-cols-2 md:items-center">
+            <img src="assets/images/school_models_9.png" alt="" class="md:order-1 md:relative md:scale-110 md:left-15">
+            <div class="p-5 flex flex-col gap-5 mt-5 md:p-15">
+                <p class="text-white text-xl md:text-2xl">“Notre Dame must be the leading global Catholic research university, on par with but distinct from the world's best private universities. This effort to educate students and conduct research at the highest level animated by a distinctive Catholic mission is one of the most exciting and consequential experiments in global higher education.”</p>
                 <p class="self-end text-gray-300">— Notre Dame 2033: A Strategic Framework</p>
             </div>
         </div>
     </section>
-    <section class="p-5 mt-10">
+    <section class="p-5 mt-10 md:mt-40 md:p-15 md:px-20">
         <div class="flex flex-col gap-5">
-            <div class="flex flex-col">
-                <p class="uppercase text-sm text-gray-600">University Events</p>
-                <p class="text-3xl text-blue-brand font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0">Notre Dame In Motion</p>
+            <div class="flex flex-col gap-5 md:flex-row md:justify-between">
+                <div class="">
+                    <p class="uppercase text-sm text-gray-600 md:text-base">University Events</p>
+                    <p class="text-2xl text-blue-brand font-black font-stretch-95% pb-4 mt-2 before:h-1 before:w-15 before:bg-gold-brand relative before:absolute before:-bottom-0 md:text-5xl md:font-bold md:before:w-20 md:before:h-1.5 md:before:-left-5">Notre Dame In Motion</p>
+                </div>
+                <div class="hidden md:block">
+                    <button class="flex text-blue-brand items-center gap-2 w-fit px-5 py-3 rounded-lg mt-5 self-end focus:outline-4 focus:outline-blue-500">
+                        View all stories
+                        <span class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-1.5 fill-gold-brand"></span>
+                    </button>
+                </div>
             </div>
-            <div class="grid grid-cols-1 mt-10 gap-y-10">
+            <div class="grid grid-cols-1 mt-10 gap-y-10 md:grid-cols-2">
                 <div class="flex gap-10">
                     <div class="flex flex-col text-blue-brand items-center">
                         <span class="uppercase text-xl">Feb</span>
-                        <span class="text-3xl font-black">28</span>
+                        <span class="text-3xl font-black md:text-4xl">28</span>
                     </div>
                     <div class="flex flex-col gap-3 pr-15">
                         <p class="text-xl text-blue-brand font-normal">Ten Years Hence Lecture: "A Brief History of the Future"</p>
@@ -257,7 +304,7 @@
                 <div class="flex gap-10">
                     <div class="flex flex-col text-blue-brand items-center">
                         <span class="uppercase text-xl">Mar</span>
-                        <span class="text-3xl font-black">8</span>
+                        <span class="text-3xl font-black md:text-4xl">8</span>
                     </div>
                     <div class="flex flex-col gap-3 pr-15">
                         <p class="text-xl text-blue-brand font-normal">Spring Break (no classes in session)</p>
@@ -270,7 +317,7 @@
                 <div class="flex gap-10">
                     <div class="flex flex-col text-blue-brand items-center">
                         <span class="uppercase text-xl">Mar</span>
-                        <span class="text-3xl font-black">19</span>
+                        <span class="text-3xl font-black md:text-4xl">19</span>
                     </div>
                     <div class="flex flex-col gap-3 pr-15">
                         <p class="text-xl text-blue-brand font-normal">Lecture by Doug Marsh: "Reflections on Building the University of Notre Dame Campus"</p>
@@ -283,7 +330,7 @@
                 <div class="flex gap-10">
                     <div class="flex flex-col text-blue-brand items-center">
                         <span class="uppercase text-xl">Mar</span>
-                        <span class="text-3xl font-black">20</span>
+                        <span class="text-3xl font-black md:text-4xl">20</span>
                     </div>
                     <div class="flex flex-col gap-3 pr-15">
                         <p class="text-xl text-blue-brand font-normal">The 26th Annual Dialogues on Nonviolence, Religion, and Peace featuring The Honorable Emilce Cuda</p>
@@ -294,7 +341,7 @@
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="block md:hidden">
                 <button class="flex text-blue-brand items-center gap-2 w-fit px-5 py-3 rounded-lg mt-5 self-end focus:outline-4 focus:outline-blue-500">
                     View all news
                     <span class="asset flex items-center" data-asset="images/right_chevron.svg" data-asset-class="w-1.5 fill-gold-brand"></span>
@@ -303,9 +350,9 @@
         </div>
     </section>
 </main>
-<footer class="p5 mt-10">
+<footer class="p5 mt-10 md:mt-40">
     <div class="flex flex-col gap-5">
-        <div class="bg-blue-brand text-white flex flex-col items-center gap-3 pt-20 pb-10">
+        <div class="bg-blue-brand text-white flex flex-col items-center justify-center gap-3 pt-20 pb-10 md:flex-row md:p-20">
             <ul class="contents">
                 <li class=""><a href="#" class="">Bookstore</a></li>
                 <li class=""><a href="#" class="">Employment</a></li>
@@ -314,43 +361,45 @@
                 <li class=""><a href="#" class="">Academic Calendar</a></li>
             </ul>
         </div>
-        <div class="flex flex-col items-center p-5 gap-10">
+        <div class="flex flex-col items-center p-5 gap-10 md:flex-row md:justify-between md:items-start md:px-20">
             <span class="asset **:fill-gray-700" data-asset="images/logo.svg" data-asset-class="h-10"></span>
-            <ul class="fill-gray-700 gap-5 flex flex-col">
-                <li class=""><a href="" class="flex gap-2">
+            <ul class="fill-gray-700 gap-5 flex flex-col md:grid md:grid-cols-3">
+                <li class=""><a href="" class="flex gap-2 items-center justify-center">
                     <span class="asset" data-asset="images/socials_fb.svg" data-asset-class="w-4"></span>Facebook</a>
                 </li>
-                <li class=""><a href="" class="flex gap-2">
+                <li class=""><a href="" class="flex gap-2 items-center justify-center">
                     <span class="asset" data-asset="images/socials_x.svg" data-asset-class="w-4"></span>X/Twitter</a>
                 </li>
-                <li class=""><a href="" class="flex gap-2">
+                <li class=""><a href="" class="flex gap-2 items-center justify-center">
                     <span class="asset" data-asset="images/socials_ig.svg" data-asset-class="w-4"></span>Instagram</a>
                 </li>
-                <li class=""><a href="" class="flex gap-2">
+                <li class=""><a href="" class="flex gap-2 items-center justify-center">
                     <span class="asset" data-asset="images/socials_yt.svg" data-asset-class="w-4"></span>YouTube</a>
                 </li>
-                <li class=""><a href="" class="flex gap-2">
+                <li class=""><a href="" class="flex gap-2 items-center justify-center">
                     <span class="asset" data-asset="images/socials_in.svg" data-asset-class="w-4"></span>LinkedIn</a>
                 </li>
             </ul>
-            <div class="flex flex-col items-center text-gray-700">
+            <div class="flex flex-col items-center text-gray-700 md:items-start">
                 <a href="#" class="underline font-bold">© 2025 University of Notre Dame</a>
                 <p class="">Notre Dame, IN 46556 USA</p>
                 <p class="">Phone: <span class="underline">(574) 631-5000</span></p>
                 <a href="#" class="underline">Contact</a>
             </div>
         </div>
-        <div class="p-6 flex flex-col items-center text-gray-700 bg-gray-300 gap-5">
-            <ul class="contents">
+        <div class="p-6 flex flex-col items-center text-gray-700 bg-gray-300 gap-5 md:flex-row md:justify-between md:items-start md:px-20">
+            <ul class="contents md:flex md:gap-x-10">
                 <li class=""><a href="" class="">Search</a></li>
                 <li class=""><a href="" class="">Mobile App</a></li>
                 <li class=""><a href="" class="">News</a></li>
                 <li class=""><a href="" class="">Events</a></li>
                 <li class=""><a href="" class="">Visit</a></li>
+            </ul>
+            <ul class="contents md:grid md:gap-4 md:grid-cols-3 md:justify-items-center">
                 <li class=""><a href="" class="">Accessibility</a></li>
                 <li class=""><a href="" class="">Emergency</a></li>
                 <li class=""><a href="" class="">Closed Captioning</a></li>
-                <li class=""><a href="" class="">Notice of Non-Discrimination</a></li>
+                <li class="md:col-span-3 md:justify-self-end"><a href="" class="">Notice of Non-Discrimination</a></li>
             </ul>
         </div>
     </div>

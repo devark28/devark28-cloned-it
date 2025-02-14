@@ -7,7 +7,7 @@ async function loadAssets() {
     let text = await data.text();
     console.log(text);
     const frg = document.createElement('svg');
-    frg.append(text);
+    frg.innerHTML = text;
     container.append(frg);
   }
 }

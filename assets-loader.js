@@ -7,8 +7,8 @@ async function loadAssets() {
     let text = await data.text();
     console.log(text);
     const frg = document.createDocumentFragment();
-    frg.append()
-    container.append();
+    frg.append(text);
+    container.append(frg);
   }
 }
 

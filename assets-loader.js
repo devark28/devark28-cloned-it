@@ -11,7 +11,7 @@ async function loadAssets() {
     frg.innerHTML = text;
     frg.querySelector('svg')?.setAttribute('class', asset_class);
 
-    container.append(frg.querySelector('svg'));
+    container.append(frg.querySelector('svg') || ":(");
   }
 }
 

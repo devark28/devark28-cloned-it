@@ -8,8 +8,8 @@ async function loadAssets() {
     console.log(text);
     const frg = document.createElement('div');
     frg.innerHTML = text;
-    
-    container.append(frg);
+
+    container.append(frg.querySelector('svg'));
   }
 }
 

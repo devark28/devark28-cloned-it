@@ -1,3 +1,3 @@
 function loadAssets() {
-  let assetContainers = document.getElementsByClassName()
+  let assetContainers = document.querySelectorAll('.asset-[images/logo.svg]')
 }

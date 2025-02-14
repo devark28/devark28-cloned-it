@@ -3,7 +3,7 @@ async function loadAssets() {
   console.log(assetContainers);
   for (const container of assetContainers) {
     const asset = container.getAttribute('data-asset');
-    let data = await fetch(`/assets/${asset}`);
+    let data = await fetch(`/assets/${asset}`); // image
     let text = await data.text();
     console.log(text);
     const frg = document.createElement(null);

@@ -6,7 +6,7 @@ async function loadAssets() {
     let data = await fetch(`/assets/${asset}`); // images/logo.svg
     let text = await data.text();
     console.log(text);
-    const frg = document.createDocumentFragment(null);
+    const frg = document.createDocumentFragment();
     frg.innerHTML = text;
     container.append(frg);
   }

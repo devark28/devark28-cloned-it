@@ -6,6 +6,7 @@ async function loadAssets() {
     let data = await fetch(`/assets/${asset}`);
     let text = await data.text();
     console.log(text);
+    
     container.append();
   }
 }

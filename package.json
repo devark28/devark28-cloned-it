@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp assets-loader.js && cp -r assets/ dist/"
+    "build": "vite build && cp assets-loader.js dist/ && cp -r assets/ dist/"
   },
   "keywords": [],
   "author": "",

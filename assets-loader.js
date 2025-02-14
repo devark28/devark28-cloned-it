@@ -4,6 +4,7 @@ async function loadAssets() {
   for (const container of assetContainers) {
     const asset = container.getAttribute('data-asset');
     let data = await fetch(`/assets/${asset}`);
+    console.log(data);
     assetContainers.innerHtml = data;
   }
 }

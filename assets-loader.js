@@ -3,11 +3,11 @@ async function loadAssets() {
   console.log(assetContainers);
   for (const container of assetContainers) {
     const asset = container.getAttribute('data-asset');
-    let data = await fetch(`/assets/${asset}`); // images/logo.svg
+    let data = await fetch(`/assets/${asset}`);
     let text = await data.text();
     console.log(text);
-    const frg = document.createDocumentFragment(null);
-    frg.innerHTML = text;
+    const frg = document.createElement('svg');
+    frg.append(text);
     container.append(frg);
   }
 }

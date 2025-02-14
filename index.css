@@ -7,6 +7,6 @@
     --color-gold-brand: #ae9142;
     --color-gold-brand-dark: #8c7535;
     --color-gold-brand-light: #d39f10;
-/*    */
-
+/* Fonts */
+    --font-heading: GPC, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif
 }

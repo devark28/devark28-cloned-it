@@ -1,10 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
+    /* Colors */
     --color-blue-link: #0c2340;
     --color-blue-brand: #0c2340;
     --color-blue-brand-dark: #081629;
     --color-gold-brand: #ae9142;
     --color-gold-brand-dark: #8c7535;
     --color-gold-brand-light: #d39f10;
+    /* Fonts */
+    --font-heading: GPC, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    --font-heading-article: "Sumana", Georgia, "Times New Roman", Times, serif;
 }

@@ -3,7 +3,7 @@ function loadAssets() {
   console.log(assetContainers);
   assetContainers.forEach((container) => {
     const asset = container.getAttribute('data-asset');
-    fetch(`/assets/${asset}`)
+    let data = fetch(`/assets/${asset}`);
   })
 }
 
